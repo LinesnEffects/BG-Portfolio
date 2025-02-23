@@ -1,7 +1,20 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
+import { useState } from "react";
 
 const About = () => {
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("benjamingomdev@outlook.com");
+
+    setHasCopied(true);
+
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
+
   return (
     <section className="c-space my-20">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -26,7 +39,7 @@ const About = () => {
             <img
               src="/assets/grid2.png"
               alt="grid-2"
-              className="w-full sm:w-[276px] h-fit object-contain"
+              className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
               <p className="grid-headtext">Tech Stack</p>
@@ -94,6 +107,16 @@ const About = () => {
               alt="grid-4"
               className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
             />
+            <div className="space-y-2">
+              <p className="grid-subtext text-center">Contact me</p>
+              <div className="copy-container" onClick={handleCopy}>
+                <img
+                  src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-base md:text-base font-medium text-gray_gradient text-white">benjamingomdev@outlook.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
