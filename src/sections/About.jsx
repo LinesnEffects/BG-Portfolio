@@ -80,7 +80,13 @@ const About = () => {
               <p className="grid-subtext">
                 I'm based in Colombia, with remote work available.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -114,7 +120,9 @@ const About = () => {
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
                   alt="copy"
                 />
-                <p className="lg:text-base md:text-base font-medium text-gray_gradient text-white">benjamingomdev@outlook.com</p>
+                <p className="lg:text-base md:text-base font-medium text-gray_gradient text-white">
+                  benjamingomdev@outlook.com
+                </p>
               </div>
             </div>
           </div>
