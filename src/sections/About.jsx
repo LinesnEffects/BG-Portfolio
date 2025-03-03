@@ -75,7 +75,7 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">
-                I work remotely across most timezones.
+                I work remotely across most time zones.
               </p>
               <p className="grid-subtext">
                 I'm based in Colombia, with remote work available.
