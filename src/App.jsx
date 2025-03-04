@@ -1,10 +1,10 @@
-import Navbar from "./parts/Navbar.jsx";
-import Hero from "./parts/Hero.jsx";
-import About from "./parts/About.jsx";
-import Projects from "./parts/Projects.jsx";
-import Contact from "./parts/Contact.jsx";
-import Footer from "./parts/Footer.jsx";
-import Experience from "./parts/Experience.jsx";
+import Navbar from "./sections/Navbar.jsx";
+import Hero from "./sections/Hero.jsx";
+import About from "./sections/About.jsx";
+import Projects from "./sections/Projects.jsx";
+import Contact from "./sections/Contact.jsx";
+import Footer from "./sections/Footer.jsx";
+import Experience from "./sections/Experience.jsx";
 
 const App = () => {
   return (
