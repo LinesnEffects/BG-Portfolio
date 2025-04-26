@@ -60,6 +60,43 @@ export const myProjects = [
     ],
   },
   {
+    title: "PitchDeck - Discover and explore exciting startups",
+    desc: "Discover the next big thing with PitchDeck — a dynamic showcase of emerging startups, featuring innovative ideas, inspiring founders, and opportunities to connect, invest, and collaborate.",
+    subdesc:
+      "Built with Next.js, TypeScript, Tailwind, ShadCN/UI, and Sanity, PitchDeck highlights innovative startups with a sleek UI, lightning performance, and dynamic, easily managed content.",
+    href: "https://pitchdeck-sigma.vercel.app/",
+    texture: "/textures/project/pitchdeck-video.mp4",
+    logo: "/assets/pitchdeck-icon.png",
+    logoStyle: {
+      backgroundColor: "#06111c",
+      border: "0.2px solid #1A253B",
+      boxShadow: "0px 0px 60px 0px #0f2740",
+    },
+    spotlight: "/assets/spotlight4.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "assets/nextjs.png",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 4,
+        name: "ShadCN/UI",
+        path: "/assets/shadcnui.png",
+      },
+    ],
+  },
+  {
     title: "MyPress - Admin Dashboard",
     desc: "MyPress is a modern admin dashboard that helps to manage posts with ease. It features a clean, intuitive interface and a range of options to streamline your workflow.",
     subdesc:
@@ -72,7 +109,7 @@ export const myProjects = [
       border: "0.2px solid #1A253B",
       boxShadow: "0px 0px 60px 0px #1A253B",
     },
-    spotlight: "/assets/spotlight4.png",
+    spotlight: "/assets/spotlight5.png",
     tags: [
       {
         id: 1,
